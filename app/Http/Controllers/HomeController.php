@@ -29,7 +29,7 @@ class HomeController extends Controller
 
     public function test()
     {
-        $process = new Process('graph ../../graph-cli/samples/sine.csv -o sine.png');
+        $process = new Process(['graph ../../graph-cli/samples/sine.csv -o sine.png']);
 
         $process->run();
     }
